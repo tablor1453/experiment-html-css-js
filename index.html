@@ -5,9 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glowing Border</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <button class="button glow-effect">
+        Hi there
+        <svg class="glow-container">
+            <rect pathLength="100" stroke-linecap="round" class="glow-blur"></rect>
+            <rect pathLength="100" stroke-linecap="round" class="glow-line"></rect>
+        </svg>
+    </button>
+    <button class="button glow-effect" data-glow-offset="true">
+        Hi there
+        <svg class="glow-container">
+            <rect pathLength="100" stroke-linecap="round" class="glow-blur"></rect>
+            <rect pathLength="100" stroke-linecap="round" class="glow-line"></rect>
+        </svg>
+    </button>
+    <button class="button glow-effect" data-glow-animation="true" data-glow-offset="true">
         Hi there
         <svg class="glow-container">
             <rect pathLength="100" stroke-linecap="round" class="glow-blur"></rect>
